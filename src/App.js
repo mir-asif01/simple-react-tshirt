@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Main from './Components/Layout/Main';
 import Orders from './Components/Orders/Orders';
 import About from './Components/About/About';
+import Grandpa from './Components/Grandpa/Grandpa';
 
 function App() {
   const routes = createBrowserRouter([
@@ -20,6 +20,7 @@ function App() {
         },
         { path: '/orders', element: <Orders></Orders> },
         { path: '/about', element: <About></About> },
+        { path: '/grandpa', element: <Grandpa></Grandpa> },
       ]
     },
     // {
@@ -27,7 +28,7 @@ function App() {
     // }
   ])
   return (
-    <div>
+    <div className=''>
       <RouterProvider router={routes}></RouterProvider>
     </div>
   );
