@@ -1,0 +1,15 @@
+
+.tshirt{
+    margin: 7px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tshirt img{
+    width: 150px;
+    height: 150px;
+}
